@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>Audio Player</h2>
+
+  <div class="player">
+
+    <div>
+      <label for="file-in">Choose audio file:</label><br>
+      <input type="file" id="file-in" accept="audio/*">
+    </div>
+
+    <p id="track-name"><industrial_drum class="wav"></industrial_drum></p>
+
+    <div>
+      <input type="range" id="prog" min="0" max="100" value="0" step="0.1">
+      <div class="time-row">
+        <span id="cur-time">0:00</span>
+        <span id="dur-time">0:00</span>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="btn-play">Play</button>
+      <button id="btn-mute">Mute</button>
+      <button id="btn-loop">Loop: Off</button>
+      <button id="btn-skip-b">-10s</button>
+      <button id="btn-skip-f">+10s</button>
+    </div>
+
+    <div class="row">
+      <label for="vol">Volume:</label>
+      <input type="range" id="vol" min="0" max="1" step="0.01" value="1">
+      <span id="vol-val">100%</span>
+    </div>
+
+    <div class="row">
+      <label for="speed">Speed:</label>
+      <select id="speed">
+        <option value="0.5">0.5x</option>
+        <option value="0.75">0.75x</option>
+        <option value="1" selected>1x (Normal)</option>
+        <option value="1.5">1.5x</option>
+        <option value="2">2x</option>
+      </select>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

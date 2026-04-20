@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 30px;
+  background: #f9f9f9;
+  color: #222;
+}
+
+h2 {
+  margin-bottom: 16px;
+}
+
+.player {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+#track-name {
+  font-size: 14px;
+  color: #555;
+}
+
+input[type=range] {
+  width: 100%;
+}
+
+.time-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #777;
+  margin-top: 2px;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 6px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #999;
+}
+
+button:hover {
+  background: #eee;
+}
+
+button.on {
+  background: #ddd;
+  font-weight: bold;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.row input[type=range] {
+  flex: 1;
+}
+
+select {
+  font-size: 13px;
+  padding: 3px;
+}
